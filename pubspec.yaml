@@ -1,0 +1,72 @@
+name: billingproject
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # State management
+  flutter_riverpod: ^2.4.9
+
+  # Database
+  supabase_flutter: ^2.3.1
+  postgres: ^2.6.3
+
+  # Environment variables
+  flutter_dotenv: ^5.1.0
+
+  path: ^1.8.3
+  path_provider: ^2.1.2
+
+  # Image handling
+  image_picker: ^1.0.7
+
+  # WhatsApp integration
+  url_launcher: ^6.2.1
+
+  # UI utilities
+  intl: ^0.18.1
+  flutter_slidable: ^3.0.1
+  shimmer: ^3.0.0
+  # shared_preferences: ^2.5.3
+
+  # Printing and sharing
+  share_plus: ^7.2.1
+  printing: ^5.12.0
+  pdf: ^3.10.7
+  mobile_scanner: ^6.0.7
+  speech_to_text: ^7.0.0
+  font_awesome_flutter: ^10.5.0
+  permission_handler: ^11.0.1
+  flutter_blue_plus: ^1.35.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.4.2
+  build_runner: ^2.4.6
+  riverpod_generator: ^2.3.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/billing_image.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/billing_image.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - .env
